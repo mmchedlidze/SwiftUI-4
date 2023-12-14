@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E729152B2B0FC3008CFD3D /* TravellerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729142B2B0FC3008CFD3D /* TravellerApp.swift */; };
+		A9E729192B2B0FC6008CFD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E729182B2B0FC6008CFD3D /* Assets.xcassets */; };
+		A9E7291C2B2B0FC6008CFD3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E7291B2B2B0FC6008CFD3D /* Preview Assets.xcassets */; };
+		A9E729272B2B102A008CFD3D /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729262B2B102A008CFD3D /* MainScreenView.swift */; };
+		A9E729292B2B1057008CFD3D /* TravelDestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */; };
+		A9E7292C2B2B10A5008CFD3D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7292B2B2B10A5008CFD3D /* HeaderView.swift */; };
+		A9E7292E2B2B10C6008CFD3D /* AlerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */; };
+		A9E729322B2B119B008CFD3D /* TopDestinationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729312B2B119B008CFD3D /* TopDestinationsView.swift */; };
+		A9E729342B2B11D5008CFD3D /* DestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729332B2B11D5008CFD3D /* DestinationDetailView.swift */; };
+		A9E7293A2B2B2016008CFD3D /* TransportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729392B2B2016008CFD3D /* TransportDetailView.swift */; };
+		A9E7293C2B2B2043008CFD3D /* MustSeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7293B2B2B2043008CFD3D /* MustSeeDetailView.swift */; };
+		A9E7293E2B2B205D008CFD3D /* HotelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7293D2B2B205D008CFD3D /* HotelDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9E729112B2B0FC3008CFD3D /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E729142B2B0FC3008CFD3D /* TravellerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerApp.swift; sourceTree = "<group>"; };
+		A9E729182B2B0FC6008CFD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9E7291B2B2B0FC6008CFD3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9E729262B2B102A008CFD3D /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDestinationModel.swift; sourceTree = "<group>"; };
+		A9E7292B2B2B10A5008CFD3D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerViewModel.swift; sourceTree = "<group>"; };
+		A9E729312B2B119B008CFD3D /* TopDestinationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDestinationsView.swift; sourceTree = "<group>"; };
+		A9E729332B2B11D5008CFD3D /* DestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailView.swift; sourceTree = "<group>"; };
+		A9E729392B2B2016008CFD3D /* TransportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportDetailView.swift; sourceTree = "<group>"; };
+		A9E7293B2B2B2043008CFD3D /* MustSeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustSeeDetailView.swift; sourceTree = "<group>"; };
+		A9E7293D2B2B205D008CFD3D /* HotelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E7290E2B2B0FC3008CFD3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9E729082B2B0FC3008CFD3D = {
+			isa = PBXGroup;
+			children = (
+				A9E729132B2B0FC3008CFD3D /* Traveller */,
+				A9E729122B2B0FC3008CFD3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E729122B2B0FC3008CFD3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E729112B2B0FC3008CFD3D /* Traveller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9E729132B2B0FC3008CFD3D /* Traveller */ = {
+			isa = PBXGroup;
+			children = (
+				A9E729142B2B0FC3008CFD3D /* TravellerApp.swift */,
+				A9E729372B2B1DA1008CFD3D /* MainPage */,
+				A9E729382B2B1DF9008CFD3D /* DetailedPage */,
+				A9E729182B2B0FC6008CFD3D /* Assets.xcassets */,
+				A9E7291A2B2B0FC6008CFD3D /* Preview Content */,
+			);
+			path = Traveller;
+			sourceTree = "<group>";
+		};
+		A9E7291A2B2B0FC6008CFD3D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7291B2B2B0FC6008CFD3D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9E7292A2B2B1077008CFD3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9E7292F2B2B10F5008CFD3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9E729302B2B1158008CFD3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9E729262B2B102A008CFD3D /* MainScreenView.swift */,
+				A9E729312B2B119B008CFD3D /* TopDestinationsView.swift */,
+				A9E7292B2B2B10A5008CFD3D /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9E729372B2B1DA1008CFD3D /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7292A2B2B1077008CFD3D /* Model */,
+				A9E729302B2B1158008CFD3D /* View */,
+				A9E7292F2B2B10F5008CFD3D /* ViewModel */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		A9E729382B2B1DF9008CFD3D /* DetailedPage */ = {
+			isa = PBXGroup;
+			children = (
+				A9E729332B2B11D5008CFD3D /* DestinationDetailView.swift */,
+				A9E729392B2B2016008CFD3D /* TransportDetailView.swift */,
+				A9E7293B2B2B2043008CFD3D /* MustSeeDetailView.swift */,
+				A9E7293D2B2B205D008CFD3D /* HotelDetailView.swift */,
+			);
+			path = DetailedPage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9E729102B2B0FC3008CFD3D /* Traveller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E7291F2B2B0FC6008CFD3D /* Build configuration list for PBXNativeTarget "Traveller" */;
+			buildPhases = (
+				A9E7290D2B2B0FC3008CFD3D /* Sources */,
+				A9E7290E2B2B0FC3008CFD3D /* Frameworks */,
+				A9E7290F2B2B0FC3008CFD3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Traveller;
+			productName = Traveller;
+			productReference = A9E729112B2B0FC3008CFD3D /* Traveller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9E729092B2B0FC3008CFD3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A9E729102B2B0FC3008CFD3D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A9E7290C2B2B0FC3008CFD3D /* Build configuration list for PBXProject "Traveller" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9E729082B2B0FC3008CFD3D;
+			productRefGroup = A9E729122B2B0FC3008CFD3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9E729102B2B0FC3008CFD3D /* Traveller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9E7290F2B2B0FC3008CFD3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E7291C2B2B0FC6008CFD3D /* Preview Assets.xcassets in Resources */,
+				A9E729192B2B0FC6008CFD3D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9E7290D2B2B0FC3008CFD3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E729292B2B1057008CFD3D /* TravelDestinationModel.swift in Sources */,
+				A9E729272B2B102A008CFD3D /* MainScreenView.swift in Sources */,
+				A9E729152B2B0FC3008CFD3D /* TravellerApp.swift in Sources */,
+				A9E729342B2B11D5008CFD3D /* DestinationDetailView.swift in Sources */,
+				A9E7293C2B2B2043008CFD3D /* MustSeeDetailView.swift in Sources */,
+				A9E729322B2B119B008CFD3D /* TopDestinationsView.swift in Sources */,
+				A9E7293E2B2B205D008CFD3D /* HotelDetailView.swift in Sources */,
+				A9E7292C2B2B10A5008CFD3D /* HeaderView.swift in Sources */,
+				A9E7292E2B2B10C6008CFD3D /* AlerViewModel.swift in Sources */,
+				A9E7293A2B2B2016008CFD3D /* TransportDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9E7291D2B2B0FC6008CFD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9E7291E2B2B0FC6008CFD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9E729202B2B0FC6008CFD3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Traveller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Traveller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9E729212B2B0FC6008CFD3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Traveller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Traveller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E7290C2B2B0FC3008CFD3D /* Build configuration list for PBXProject "Traveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E7291D2B2B0FC6008CFD3D /* Debug */,
+				A9E7291E2B2B0FC6008CFD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E7291F2B2B0FC6008CFD3D /* Build configuration list for PBXNativeTarget "Traveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E729202B2B0FC6008CFD3D /* Debug */,
+				A9E729212B2B0FC6008CFD3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9E729092B2B0FC3008CFD3D /* Project object */;
+}
