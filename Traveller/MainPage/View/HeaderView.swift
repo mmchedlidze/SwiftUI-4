@@ -10,8 +10,7 @@ import SwiftUI
 struct HeaderView: View {
     @State private var isAlertPresented = false
     @State private var randomTip = ""
-    
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             
@@ -24,6 +23,7 @@ struct HeaderView: View {
         .onAppear {
             randomTip = TravelTips.getRandomTip()
         }
+        
         .alert(isPresented: $isAlertPresented) {
             Alert(
                 title: Text("Travel Tip"),

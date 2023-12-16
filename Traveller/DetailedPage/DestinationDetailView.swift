@@ -9,24 +9,25 @@ import SwiftUI
 
 struct DestinationDetailView: View {
     var place: Places
-    
+    @Binding var path: NavigationPath
+
     var body: some View {
-        NavigationView{
             
             ZStack {
+                
                 backgroundView
                 
                 VStack(alignment: .leading) {
+                    
                     cardTextView
                     buttonsView
-                    
                         .padding(.top, 24)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(24)
+                
             }
         }
-    }
     
     var backgroundView: some View {
         
@@ -45,7 +46,8 @@ struct DestinationDetailView: View {
     
     var cardTextView: some View {
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading ) {
+            
             Text(place.place)
                 .font(.system(size: 20, weight: .bold))
                 .foregroundStyle(.primary)
@@ -58,12 +60,14 @@ struct DestinationDetailView: View {
                 Text(place.country)
                     .font(.system(size: 16, weight: .regular))
                     .foregroundStyle(.secondary)
+                
             }
             
             Text(place.description)
                 .padding(.top, 12)
                 .font(.system(size: 16, weight: .regular))
                 .foregroundStyle(.secondary)
+            
         }
         .padding(.top, 330)
     }
@@ -75,25 +79,23 @@ struct DestinationDetailView: View {
                 .font(.system(size: 20, weight: .bold))
                 .foregroundStyle(.primary)
             
-
-                NavigationLink(
-                    destination: TransportDetailView(place: place),
-                    label: {
-                        TravelTipRow(imageName: "bus.fill", tip: "Transport")
-                    } )
-
-                NavigationLink(
-                    destination: MustSeeDetailView(place:place),
-                    label: {
-                        TravelTipRow(imageName: "mappin.and.ellipse", tip: "Must See")
-                    } )
-
-                NavigationLink(
-                    destination: HotelDetailView(place: place),
-                    label: {
-                        TravelTipRow(imageName: "bed.double", tip: "Hotel")
-                    } )
-
+            NavigationLink(
+                destination: TransportDetailView(place: place, path: $path),
+                label: {
+                    TravelTipRow(imageName: "bus.fill", tip: "Transport")
+                } )
+            
+            NavigationLink(
+                destination: MustSeeDetailView(place:place, path: $path),
+                label: {
+                    TravelTipRow(imageName: "mappin.and.ellipse", tip: "Must See")
+                } )
+            
+            NavigationLink(
+                destination: HotelDetailView(place: place, path: $path),
+                label: {
+                    TravelTipRow(imageName: "bed.double", tip: "Hotel")
+                } )
         }
     }
 }
@@ -115,14 +117,7 @@ struct TravelTipRow: View {
 }
 
 
-// Preview
-struct DestinationDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let test = Places(image: "Yosemite Valley", place: "Yosemite", country: "United States, California", description: "osemite Valley, located within Yosemite National Park, is known for its iconic granite cliffs, waterfalls, and diverse ecosystems. Experience the natural beauty of Yosemite without focusing solely on the national park.", transport: "fly into Fresno Yosemite International Airport, the nearest major airport to Yosemite Valley. From there, you can rent a car for the scenic drive to the park. ", mustSee: "El Capitan: A massive granite monolith, popular among rock climbers.Yosemite Falls: The highest waterfall in North America, with breathtaking views. Half Dome: An iconic granite dome that attracts hikers and photographers alike.", hotel: "The Ahwahnee: A historic hotel with stunning architecture and views of Yosemite Falls. Tenaya Lodge at Yosemite: A resort located just outside the park, offering a luxurious retreat.")
-        
-        NavigationView {
-            DestinationDetailView(place: test)
-        }
-    }
+#Preview {
+    DestinationDetailView(place: test, path: .constant(NavigationPath()))
 }
 

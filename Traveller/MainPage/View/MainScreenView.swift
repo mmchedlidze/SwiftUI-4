@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    static func == (lhs: MainScreenView, rhs: MainScreenView) -> Bool {
-        return true
-    }
+    
+    @State private var path = NavigationPath()
     
     var topViewModel = TopDestinationViewModel()
     var popularViewModel = PopularDestinationViewModel()
     
     var body: some View {
-        NavigationView{
-            
+        NavigationStack (path: $path) {
             VStack(alignment: .leading, spacing: 24) {
                 
                 HeaderView()
@@ -28,38 +26,35 @@ struct MainScreenView: View {
                     ScrollView(.horizontal) {
                         HStack {
                             ForEach(topViewModel.topPlace) { place in
-                                NavigationLink(
-                                    destination: DestinationDetailView(place: place),
-                                    label: {
-                                        TravelCardView(place: place)
-                                    }
-                                )
+                                
+                                NavigationLink(value: place, label: {
+                                    TravelCardView(place: place)
+                                    
+                                })
                             }
+                        }.navigationDestination(for: Places.self) { place in
+                            DestinationDetailView(place: place, path: $path)
                         }
                     }
                     
-                    VStack(alignment:.leading, spacing: 24){
-                        
-                        titleTop
-                        
-                        ScrollView(.horizontal) {
-                            HStack {
-                                ForEach(popularViewModel.popularPlace) { place in
-                                    NavigationLink(
-                                        destination: DestinationDetailView(place: place),
-                                        label: {
-                                            TravelCardView(place: place)
-                                        }
-                                    )
-                                }
+                    titlePopular
+                    
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(popularViewModel.popularPlace) { place in
+                                
+                                NavigationLink(value: place, label: {
+                                    TravelCardView(place: place)
+                                })
                             }
+                        }.navigationDestination(for: Places.self) { place in
+                            DestinationDetailView(place: place, path: $path)
                         }
                     }
                 }
-            } .padding(.horizontal, 12)
+            } .padding(.horizontal, 16)
         }
     }
-    
     
     private var titleTop: some View {
         
@@ -75,7 +70,6 @@ struct MainScreenView: View {
             .foregroundColor(.primary)
     }
 }
-
 
 #Preview {
     MainScreenView()

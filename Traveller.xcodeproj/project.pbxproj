@@ -13,7 +13,7 @@
 		A9E729272B2B102A008CFD3D /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729262B2B102A008CFD3D /* MainScreenView.swift */; };
 		A9E729292B2B1057008CFD3D /* TravelDestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */; };
 		A9E7292C2B2B10A5008CFD3D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7292B2B2B10A5008CFD3D /* HeaderView.swift */; };
-		A9E7292E2B2B10C6008CFD3D /* AlerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */; };
+		A9E7292E2B2B10C6008CFD3D /* TravelTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7292D2B2B10C6008CFD3D /* TravelTips.swift */; };
 		A9E729322B2B119B008CFD3D /* TopDestinationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729312B2B119B008CFD3D /* TopDestinationsView.swift */; };
 		A9E729342B2B11D5008CFD3D /* DestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729332B2B11D5008CFD3D /* DestinationDetailView.swift */; };
 		A9E7293A2B2B2016008CFD3D /* TransportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E729392B2B2016008CFD3D /* TransportDetailView.swift */; };
@@ -29,7 +29,7 @@
 		A9E729262B2B102A008CFD3D /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDestinationModel.swift; sourceTree = "<group>"; };
 		A9E7292B2B2B10A5008CFD3D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerViewModel.swift; sourceTree = "<group>"; };
+		A9E7292D2B2B10C6008CFD3D /* TravelTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTips.swift; sourceTree = "<group>"; };
 		A9E729312B2B119B008CFD3D /* TopDestinationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDestinationsView.swift; sourceTree = "<group>"; };
 		A9E729332B2B11D5008CFD3D /* DestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailView.swift; sourceTree = "<group>"; };
 		A9E729392B2B2016008CFD3D /* TransportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportDetailView.swift; sourceTree = "<group>"; };
@@ -88,16 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				A9E729282B2B1057008CFD3D /* TravelDestinationModel.swift */,
+				A9E7292D2B2B10C6008CFD3D /* TravelTips.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A9E7292F2B2B10F5008CFD3D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A9E7292D2B2B10C6008CFD3D /* AlerViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A9E729302B2B1158008CFD3D /* View */ = {
@@ -115,7 +108,6 @@
 			children = (
 				A9E7292A2B2B1077008CFD3D /* Model */,
 				A9E729302B2B1158008CFD3D /* View */,
-				A9E7292F2B2B10F5008CFD3D /* ViewModel */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -209,7 +201,7 @@
 				A9E729322B2B119B008CFD3D /* TopDestinationsView.swift in Sources */,
 				A9E7293E2B2B205D008CFD3D /* HotelDetailView.swift in Sources */,
 				A9E7292C2B2B10A5008CFD3D /* HeaderView.swift in Sources */,
-				A9E7292E2B2B10C6008CFD3D /* AlerViewModel.swift in Sources */,
+				A9E7292E2B2B10C6008CFD3D /* TravelTips.swift in Sources */,
 				A9E7293A2B2B2016008CFD3D /* TransportDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
