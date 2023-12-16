@@ -24,14 +24,14 @@ struct MustSeeDetailView: View {
                     Text(place.mustSee)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .lineLimit(3)
-                        .fixedSize(horizontal: false, vertical: true)
-                    
+//                        .frame(maxWidth: .infinity, alignment: .leading)
                     
                     NavigationLink(destination: MainScreenView()) {
                         Text("Home")
                             .foregroundStyle(.primary)
                     }
                 }.padding()
+                Spacer()
             }
         }
     }
@@ -41,6 +41,7 @@ struct MustSeeDetailView: View {
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(height: 400)
+            .ignoresSafeArea()
     }
 }
 

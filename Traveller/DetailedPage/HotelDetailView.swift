@@ -15,6 +15,7 @@ struct HotelDetailView: View {
             
             VStack(spacing: 40) {
                 imageView
+                    .ignoresSafeArea()
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 24){
@@ -25,13 +26,14 @@ struct HotelDetailView: View {
                     Text(place.hotel)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .lineLimit(3)
-                        .fixedSize(horizontal: false, vertical: true)
-                    
+//                        .frame(maxWidth: .infinity, alignment: .leading)
+
                     NavigationLink(destination: MainScreenView()) {
                         Text("Home")
                             .foregroundStyle(.primary)
                     }
                 }.padding()
+                Spacer()
             }
         }
     }
@@ -41,11 +43,11 @@ struct HotelDetailView: View {
         Image("hotel")
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(height: 350)
-        
+            .frame(height: 400)
+            .ignoresSafeArea()
+
     }
 }
-
 
 struct HotelDetailViewPreviews: PreviewProvider {
     static var previews: some View {

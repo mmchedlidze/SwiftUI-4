@@ -75,29 +75,25 @@ struct DestinationDetailView: View {
                 .font(.system(size: 20, weight: .bold))
                 .foregroundStyle(.primary)
             
-            VStack{
+
                 NavigationLink(
                     destination: TransportDetailView(place: place),
                     label: {
                         TravelTipRow(imageName: "bus.fill", tip: "Transport")
                     } )
-            }
-            
-            VStack{
+
                 NavigationLink(
                     destination: MustSeeDetailView(place:place),
                     label: {
                         TravelTipRow(imageName: "mappin.and.ellipse", tip: "Must See")
                     } )
-            }
-            
-            VStack{
+
                 NavigationLink(
                     destination: HotelDetailView(place: place),
                     label: {
                         TravelTipRow(imageName: "bed.double", tip: "Hotel")
                     } )
-            }
+
         }
     }
 }
